@@ -72,7 +72,7 @@ public class PracticeFormPage extends BasePage {
                 .sendKeys(mobileNumberInput, practiceFormEntity.getUserNumber())
                 .sendKeysWithEnter(subjectsContainerInput, practiceFormEntity.getSubject())
 //                .jsClick(randomHobbiesClick()) // с простым кликом не происходил переход после предыдущего метода
-                .sendKeys(uploadPicture, practiceFormEntity.getPicture())
+//          .sendKeys(uploadPicture, practiceFormEntity.getPicture())
                 .sendKeys(currentAddressInput, practiceFormEntity.getCurrentAddress())
                 .sendKeysWithEnter(stateInput, webElementActions.randomElementSelection("(//div[@class=' css-1hwfws3'])[1]", "//div[contains(@class,'menu')]//div[contains(@class,'option')]"))
                 .sendKeysWithEnter(cityInput, webElementActions.randomElementSelection("(//div[@class=' css-1hwfws3'])[2]", "//div[contains(@class,'menu')]//div[contains(@class,'option')]"))
