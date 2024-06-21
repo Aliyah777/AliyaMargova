@@ -38,4 +38,13 @@ public class BaseTest {
 //        DriverManager.closeDriver();
 //    }
 
+  @BeforeClass(alwaysRun = true)
+    public void setUp3() {
+        driver = DriverManager.getDriver();
+    }
+
+    @AfterClass(alwaysRun = true)
+    public void tearDown() {
+        DriverManager.quitDriver();
+    }
 }
