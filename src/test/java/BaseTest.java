@@ -15,7 +15,7 @@ public class BaseTest {
     protected BrowserHelper browserHelper;
     protected DropDownHelperSelect dropDownHelperSelect;
     protected IframeHelper iframeHelper;
-    
+
 
 
     @BeforeClass(alwaysRun = true)
@@ -32,10 +32,18 @@ public class BaseTest {
 
 
     }
-//
+    @BeforeClass(alwaysRun = true)
+    public void setUp3() {
+        driver = DriverManager.getDriver();
+    }
+
+    @AfterClass(alwaysRun = true)
+    public void tearDown() {
+        DriverManager.closeDriver();
+    }
+}
 //    @AfterClass(alwaysRun = true)
 //    public void tearDown(){
 //        DriverManager.closeDriver();
 //    }
 
-}
