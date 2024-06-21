@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke">
+<!--        for screenshot option-->
+    <listeners>
+            <listener class-name="demoQA.winer24.drivers.listener.ScreenshotListener"></listener>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="C:/Users/����/IdeaProjects/DemoQAWinter2024">
+            <classes>
+            <class name="PracticeFormTest"></class>
+                <class name="ProgressBarTest"></class>
+
+        </classes>
+    </test>
+</suite>
